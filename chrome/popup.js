@@ -12,14 +12,22 @@ const sendAlert = () => {
 }
 
 button.addEventListener("click",async () => {
-    const res = await sendAlert();
-    console.log(res);
-    if (res.status >= 200 && res.status <300) {
-        button.classList.add("sent");
-    } else {
+    try {
+        const res = await sendAlert();
+        console.log(res);
+        if (res.status >= 200 && res.status <300) {
+            button.classList.add("sent");
+        } else {
+            button.classList.add("not-sent");
+        }
+        setTimeout(() => {
+            button.removeAttribute("class");
+        }, 2000);
+    } catch (err) {
+        console.log(err);
         button.classList.add("not-sent");
+        setTimeout(() => {
+            button.removeAttribute("class");
+        }, 2000);
     }
-    setTimeout(() => {
-        button.removeAttribute("class");
-    }, 2000);
 });
