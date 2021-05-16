@@ -21,6 +21,27 @@ ul {
   border-radius: 4px;
   padding: 20px 40px; }
 
+.pix-message__header {
+  display: flex;
+  justify-content: space-between; }
+
+.pix-message__button {
+  border: none;
+  align-self: center;
+  padding: 5px 15px;
+  border-radius: 4px;
+  cursor: pointer; }
+
+.pix-message__button--delete {
+  font-size: 18px;
+  font-weight: 700;
+  background: #e74c3c;
+  color: #fff;
+  transition: background 0.4s; }
+
+.pix-message__button--delete:hover {
+  background: #c0392b; }
+
 .pix-message__list {
   border-top: 1px solid #ccc;
   padding-top: 10px; }
