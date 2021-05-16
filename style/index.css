@@ -1,0 +1,31 @@
+:root {
+  font-family: sans-serif; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+
+ul {
+  list-style: none; }
+
+.pix-message__container {
+  width: 500px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  padding: 20px 40px; }
+
+.pix-message__list {
+  border-top: 1px solid #ccc;
+  padding-top: 10px; }
+
+.pix-message__message {
+  display: flex;
+  margin-bottom: 5px;
+  font-weight: 700; }

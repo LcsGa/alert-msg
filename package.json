@@ -1,0 +1,16 @@
+{
+    "name": "pixalert",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+        "node-sass": "^6.0.0"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "sass": "node-sass -w style -o style"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
