@@ -29,3 +29,6 @@ ul {
   display: flex;
   margin-bottom: 5px;
   font-weight: 700; }
+
+.pix-message__message:last-child {
+  margin-bottom: 0; }
